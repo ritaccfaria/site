@@ -1,0 +1,580 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,87.5,400;0,100,300;0,100,400;0,100,500;1,100,300;1,100,400;1,100,500&display=swap');
+
+
+@media only screen and (max-width: 768px) {
+
+.circle {
+  position: fixed;
+  height: auto;
+  width: 24vw;
+  background-color: rgba(255,255,255,0);
+  border-radius: 50%;
+  display: flex;
+  z-index: 1;
+}
+
+.star {
+    width: 75%;
+    height: 75%;
+	margin: auto;
+}
+	
+#draggable1, #draggable2, #draggable3, #draggable4, #draggable4, #draggable5, #draggable6, #draggable7, #draggable8, #draggable9, .leader-line {
+	display: none;
+}
+	
+#draggable0 {
+	margin-left: 70vw;
+	margin-top:  72vh;
+}
+	
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+
+
+
+header {
+	position: absolute;
+	margin-left: 7vw;
+	margin-top: 4vh;
+}	
+
+header span:hover {
+	color: #F1850F;
+}
+
+.me {
+	display: none;
+    width: 53%;
+    height: 25%;
+    margin-left: 39.5vw;
+    margin-top: -17vh;
+}
+
+h1 {
+	text-decoration: none;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 7vw;
+	color: #000;
+	line-height: 1.2;
+	margin-right: 3vw;
+	cursor: default;
+}
+
+main {
+	position: absolute;
+	margin-left: 7vw;
+	margin-top: 30vh;
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 8vw;
+	font-stretch: 87.5%;
+	line-height: 1.8;
+	padding-bottom: 20vh;
+}
+
+.nav li:hover, .underline {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: default;
+}
+
+.nav-video, .nav-photography, .nav-editorial, .nav-identity, .nav-web {
+	display: none;
+    top: 278px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Archivo', Arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: 100%;
+    letter-spacing: normal;
+    font-size: 5.5vw;
+    line-height: 1.6;
+	margin-bottom: 3vh;
+}
+
+.nav-video li:hover, .nav-photography li:hover, .nav-editorial li:hover, .nav-identity li:hover, .nav-web li:hover, .medium {
+	text-decoration: none;
+	font-weight: 500;
+	cursor: default;
+	color: #F1850F;
+}
+
+.nav-editorial span, .mixtape span {
+	text-decoration: line-through;
+}
+
+section {
+	display: none;
+    top: 0;
+    padding-right: 7vw;
+	margin-top: -16vh;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}	
+	
+h2 {
+	font-family: 'Archivo', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 6.5vw;
+    letter-spacing: normal;
+    padding-top: 1.8vh;
+    cursor: default;
+}
+
+p {
+	font-family: 'Archivo', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    letter-spacing: normal;
+    line-height: 1.4;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    cursor: default;
+}
+
+p:first-of-type {
+	padding-top: 0;
+}
+
+.decade p, .supercut p, .lgbt p, .mothers p, .color p, .diaries p, .factory p, .night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
+	padding-bottom: 30vh;
+}
+
+.video_wrapper {
+	position: relative;
+	margin-top: 5vh;
+	padding-bottom: 56.25%; /* 16:9 */ 
+}
+
+iframe {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img:not(.star):not(.me):not(.vert) {
+	position: relative;
+    z-index: 99;
+	width: 100%;
+	pointer-events: none;
+}
+
+.vert {
+	position: relative;
+    z-index: 99;
+	width: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #F1850F;
+}
+
+img:not(.star):not(.me):first-of-type {
+	margin-top: 5vh;
+}
+
+.guide img:last-of-type, .mixtape img:last-of-type, .green img:last-of-type, .costa img:last-of-type, .batalha img:last-of-type, .blob img:last-of-type {
+	padding-bottom: 30vh;
+}	
+	
+footer {
+	position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    padding-left: 7vw;
+	padding-right: 5.4vw;
+    margin-bottom: 0;
+    padding-top: 1.3vh;
+    border-top: solid #000 medium; 
+	z-index: 99;
+}
+
+footer a { 
+	text-decoration: none;
+    font-family: 'Archivo', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 5.5vw;
+    color: #000;
+    line-height: 1.4;
+    margin-right: 3vw;
+}
+
+footer a:first-of-type{
+	display: block;
+	margin: 0;
+	width: 10%;
+}
+
+footer a:hover {
+	color: #F1850F;
+	text-decoration: none;
+}
+
+footer p {
+	margin-left: 31vw;
+    margin-bottom: 2vh;
+    font-family: 'Archivo', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 0.4;
+    color: #000;
+}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	max-width: 100%;
+    overflow-x: hidden;
+}	
+	
+.circle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255,255,255,0);
+  border-radius: 50%;
+  display: flex;
+  z-index: 1;
+}
+
+.star {
+    width: 75%;
+    height: 75%;
+	margin: auto;
+}
+	
+#draggable0 {
+	display: none;
+}
+
+#draggable1 {
+	margin-left: 65vw;
+	margin-top:  70vh;
+}
+
+#draggable2 {
+	margin-left: 70vw;
+	margin-top:  55vh;
+}
+
+#draggable3 {
+	margin-left: 80vw;
+	margin-top:  59vh;
+}
+
+#draggable4 {
+	margin-left: 89vw;
+	margin-top:  45vh;
+}
+
+#draggable5 {
+	margin-left: 71vw;
+	margin-top:  27vh;
+}
+
+#draggable6 {
+	margin-left: 50vw;
+	margin-top:  42vh;
+}
+
+#draggable7 {
+	margin-left: 45vw;
+	margin-top:  30vh;
+}
+
+#draggable8 {
+	margin-left: 55vw;
+	margin-top:  8vh;
+}
+
+#draggable9 {
+	margin-left: 28vw;
+	margin-top:  70vh;
+}
+
+
+
+
+
+
+
+
+
+header {
+	position: absolute;
+	margin-left: 5vw;
+	margin-top: 4vh;
+}
+
+header span:hover {
+	color: #F1850F;
+}
+
+.me {
+	display: none;
+	width: 25%;
+    height: 25%;
+    margin-left: 15.5vw;
+    margin-top: -20vh;
+}
+
+
+
+
+
+
+
+h1 {
+	text-decoration: none;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 2vw;
+	color: #000;
+	line-height: 1.2;
+	margin-right: 3vw;
+	cursor: default;
+}
+
+main {
+	position: absolute;
+	margin-left: 5vw;
+	margin-top: 40vh;
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 1.5vw;
+	font-stretch: 87.5%;
+	line-height: 1.6;
+}
+
+.nav li:hover, .underline {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: default;
+}
+
+.nav-video, .nav-photography, .nav-editorial, .nav-identity, .nav-web {
+	display: none;
+	position: absolute;
+	width: 19vw;
+    top: 0;
+    margin-left: 16vw;
+	padding: 0;
+	list-style: none;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-stretch: 100%;
+	letter-spacing: normal;
+	font-size: 1vw;
+	line-height: 1.6;
+}
+	
+.nav a {
+	text-decoration: none;
+	color: #000;
+}	
+
+.nav-video li:hover, .nav-photography li:hover, .nav-editorial li:hover, .nav-identity li:hover, .nav-web li:hover, .medium {
+	text-decoration: none;
+	font-weight: 500;
+	cursor: default;
+	color: #F1850F;
+}
+
+.nav-editorial span, .mixtape span {
+	text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+section {
+	display: none;
+	position: absolute;
+	overflow-y: auto;
+	scrollbar-width: none;
+	width: 52vw;
+	height: 100vh;
+	margin-top: -40vh;
+	top: 0;
+    margin-left: 40vw;
+	padding-right: 5vw;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 1.4vw;
+	letter-spacing: normal;
+	padding-top: 1.8vh;
+	cursor: default;
+}
+
+p {
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1vw;
+	letter-spacing: normal;
+	line-height: 1.4;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	cursor: default;
+}
+
+p:first-of-type {
+	padding-top: 0;
+}
+
+.night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
+	margin-bottom: 37vh;
+}
+
+.video_wrapper {
+	position: relative;
+	margin-top: 5vh;
+	padding-bottom: 56.25%; /* 16:9 */ 
+}
+
+iframe {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img:not(.star):not(.me):not(.vert) {
+	position: relative;
+    z-index: 99;
+	width: 100%;
+	pointer-events: none;
+}
+
+.vert {
+	position: relative;
+    z-index: 99;
+	width: 70%;
+}
+
+section a {
+	color: #000;
+	text-decoration: underline;
+}
+
+section a:hover {
+	color: #F1850F;
+}
+
+img:not(.star):not(.me):first-of-type {
+	margin-top: 5vh;
+}
+
+.guide img:last-of-type, .mixtape img:last-of-type, .green img:last-of-type, .costa img:last-of-type, .batalha img:last-of-type, .blob img:last-of-type {
+	margin-bottom: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+	position: absolute;
+	width: 40%;
+	bottom: 0;
+	margin-left: 5vw;
+	margin-bottom: 0;	
+}
+
+footer a { 
+	text-decoration: none;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 2vw;
+	color: #000;
+	line-height: 1.4;
+	margin-right: 3vw;
+}
+
+footer a:first-of-type{
+	display: block;
+	margin: 0;
+	width: 10%;
+}
+
+footer a:hover {
+	color: #F1850F;
+	text-decoration: none;
+}
+
+footer p {
+	width: 6vw;
+	margin-left: 86vw;
+	font-family: 'Archivo', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 0.7vw;
+	color: #000;
+}
+	
+	
+}
