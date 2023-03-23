@@ -174,10 +174,19 @@ $(".star").mouseover(function () {
 $("#video").click(function() {
 	
 	// desativar os outros menus
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$(".nav-photography, .nav-editorial, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#photography, #editorial, #identity, #web").removeClass("underline");
-	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".nav-video").toggle();
@@ -188,10 +197,19 @@ $("#video").click(function() {
 
 $("#photography").click(function() {
 	// desativar os outros menus
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$(".nav-video, .nav-editorial, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#video, #editorial, #identity, #web").removeClass("underline");
-	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
     $(".nav-photography").toggle();
@@ -200,10 +218,19 @@ $("#photography").click(function() {
 
 $("#editorial").click(function() {
 	// desativar os outros menus
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$(".nav-photography, .nav-video, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#photography, #video, #identity, #web").removeClass("underline");
-	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
     $(".nav-editorial").toggle();
@@ -212,10 +239,19 @@ $("#editorial").click(function() {
 
 $("#identity").click(function() {
 	// desativar os outros menus
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$(".nav-photography, .nav-editorial, .nav-video, .nav-web").attr('style', 'display:none');
 	$("#photography, #editorial, #video, #web").removeClass("underline");
-	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
     $(".nav-identity").toggle();
@@ -224,10 +260,19 @@ $("#identity").click(function() {
 
 $("#web").click(function() {
 	// desativar os outros menus
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$(".nav-photography, .nav-editorial, .nav-identity, .nav-video").attr('style', 'display:none');
 	$("#photography, #editorial, #identity, #video").removeClass("underline");
-	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
     $(".nav-web").toggle();
@@ -242,12 +287,40 @@ $("#web").click(function() {
 
 
 // TOGGLE WORK
+$("#2022").click(function() {
+	
+	// desativar os outros menus
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	
+	// ativar
+  	$(".2022").toggle();
+	$(this).toggleClass("medium");
+});
 
 $("#decade").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".decade").toggle();
@@ -257,8 +330,17 @@ $("#decade").click(function() {
 $("#supercut").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .decade, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #decade, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .decade, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #decade, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".supercut").toggle();
@@ -268,8 +350,17 @@ $("#supercut").click(function() {
 $("#dance").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .lgbt, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #lgbt, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .lgbt, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #lgbt, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".dance").toggle();
@@ -279,8 +370,17 @@ $("#dance").click(function() {
 $("#lgbt").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .dance, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #dance, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .dance, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #dance, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".lgbt").toggle();
@@ -290,8 +390,17 @@ $("#lgbt").click(function() {
 $("#mothers").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .decade, .dance, .lgbt, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #decade, #dance, #lgbt, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .decade, .dance, .lgbt, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #decade, #dance, #lgbt, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".mothers").toggle();
@@ -301,8 +410,17 @@ $("#mothers").click(function() {
 $("#color").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .dance, .decade, .mothers, .lgbt, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #dance, #decade, #mothers, #lgbt, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .dance, .decade, .mothers, .lgbt, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #dance, #decade, #mothers, #lgbt, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".color").toggle();
@@ -312,8 +430,17 @@ $("#color").click(function() {
 $("#diaries").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .dance, .decade, .mothers, .color, .lgbt, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #dance, #decade, #mothers, #color, #lgbt, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .dance, .decade, .mothers, .color, .lgbt, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #dance, #decade, #mothers, #color, #lgbt, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".diaries").toggle();
@@ -323,8 +450,17 @@ $("#diaries").click(function() {
 $("#factory").click(function() {
 	
 	// desativar os outros menus
-	$(".night, .supercut, .decade, .dance, .mothers, .color, .diaries, .lgbt, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#night, #supercut, #decade, #dance, #mothers, #color, #diaries, #lgbt, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$(".2022, .night, .supercut, .decade, .dance, .mothers, .color, .diaries, .lgbt, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #night, #supercut, #decade, #dance, #mothers, #color, #diaries, #lgbt, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".factory").toggle();
@@ -334,8 +470,8 @@ $("#factory").click(function() {
 $("#night").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".night").toggle();
@@ -345,8 +481,8 @@ $("#night").click(function() {
 $("#splash").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching").removeClass("medium");
 	
 	// ativar
   	$(".splash").toggle();
@@ -356,8 +492,8 @@ $("#splash").click(function() {
 $("#naranja").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".naranja").toggle();
@@ -367,8 +503,8 @@ $("#naranja").click(function() {
 $("#guide").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".guide").toggle();
@@ -378,8 +514,8 @@ $("#guide").click(function() {
 $("#mixtape").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".mixtape").toggle();
@@ -389,8 +525,8 @@ $("#mixtape").click(function() {
 $("#green").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".green").toggle();
@@ -400,8 +536,8 @@ $("#green").click(function() {
 $("#costa").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".costa").toggle();
@@ -411,8 +547,8 @@ $("#costa").click(function() {
 $("#peter").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".peter").toggle();
@@ -422,8 +558,8 @@ $("#peter").click(function() {
 $("#batalha").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #blob, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".batalha").toggle();
@@ -433,8 +569,8 @@ $("#batalha").click(function() {
 $("#blob").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #watching, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".blob").toggle();
@@ -444,8 +580,8 @@ $("#blob").click(function() {
 $("#watching").click(function() {
 	
 	// desativar os outros menus
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash").removeClass("medium");
 	
 	// ativar
   	$(".watching").toggle();
@@ -459,13 +595,21 @@ $("#watching").click(function() {
 // CLOSE PROJECT + NAV WHEN YOU CLICK SOMEWHERE ELSE ON THE PAGE
 
 $(document).click(function() {
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$(".nav-video, .nav-photography, .nav-editorial, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#video, #photography, #editorial, #identity, #web").removeClass("underline");
-	$(".decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching").attr('style', 'display:none');
-	$("#decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").removeClass("medium");
+	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching").attr('style', 'display:none');
+	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").removeClass("medium");
 });
 
-$(".circle, footer a, .nav, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").click(function(e) {
+$(".circle, footer a, .nav, .2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching, #2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").click(function(e) {
   e.stopPropagation();
 });
 
