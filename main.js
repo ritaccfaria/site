@@ -173,7 +173,7 @@ $(".star").mouseover(function () {
 
 $("#video").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -183,20 +183,32 @@ $("#video").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
 	$(".nav-photography, .nav-editorial, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#photography, #editorial, #identity, #web").removeClass("underline");
-	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".commercial, .2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
-  	$(".nav-video").toggle();
+  	$(".nav-video").fadeIn(200);
 	$(this).toggleClass("underline");
 
 	
 });
 
 $("#photography").click(function() {
-	// desativar os outros menus
+	
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -206,18 +218,30 @@ $("#photography").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
 	$(".nav-video, .nav-editorial, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#video, #editorial, #identity, #web").removeClass("underline");
-	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".commercial, .2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
-    $(".nav-photography").toggle();
+    $(".nav-photography").fadeIn(200);
 	$(this).toggleClass("underline");
 });
 
 $("#editorial").click(function() {
-	// desativar os outros menus
+	
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -227,18 +251,30 @@ $("#editorial").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
 	$(".nav-photography, .nav-video, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#photography, #video, #identity, #web").removeClass("underline");
-	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".commercial, .2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
-    $(".nav-editorial").toggle();
+    $(".nav-editorial").fadeIn(200);
 	$(this).toggleClass("underline");
 });
 
 $("#identity").click(function() {
-	// desativar os outros menus
+	
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -248,10 +284,21 @@ $("#identity").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
 	$(".nav-photography, .nav-editorial, .nav-video, .nav-web").attr('style', 'display:none');
 	$("#photography, #editorial, #video, #web").removeClass("underline");
-	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".commercial, .2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
     $(".nav-identity").toggle();
@@ -259,7 +306,8 @@ $("#identity").click(function() {
 });
 
 $("#web").click(function() {
-	// desativar os outros menus
+	
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -269,10 +317,21 @@ $("#web").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
 	$(".nav-photography, .nav-editorial, .nav-identity, .nav-video").attr('style', 'display:none');
 	$("#photography, #editorial, #identity, #video").removeClass("underline");
-	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$(".commercial, .2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativer
     $(".nav-web").toggle();
@@ -287,9 +346,9 @@ $("#web").click(function() {
 
 
 // TOGGLE WORK
-$("#2022").click(function() {
+$("#commercial").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -299,8 +358,50 @@ $("#2022").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".2022, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#2022, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	
+	// ativar
+  	$(".commercial").toggle();
+	$(this).toggleClass("medium");
+});
+
+$("#2022").click(function() {
+	
+	// desativar videos
+	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[3].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[4].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .decade, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #decade, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".2022").toggle();
@@ -309,7 +410,7 @@ $("#2022").click(function() {
 
 $("#decade").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -319,8 +420,19 @@ $("#decade").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".decade").toggle();
@@ -329,7 +441,7 @@ $("#decade").click(function() {
 
 $("#supercut").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -339,8 +451,19 @@ $("#supercut").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .decade, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #decade, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .decade, .dance, .lgbt, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #decade, #dance, #lgbt, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".supercut").toggle();
@@ -349,7 +472,7 @@ $("#supercut").click(function() {
 
 $("#dance").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -359,8 +482,19 @@ $("#dance").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .lgbt, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #lgbt, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .lgbt, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #lgbt, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".dance").toggle();
@@ -369,7 +503,7 @@ $("#dance").click(function() {
 
 $("#lgbt").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -379,8 +513,19 @@ $("#lgbt").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .dance, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #dance, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .dance, .decade, .mothers, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #dance, #decade, #mothers, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".lgbt").toggle();
@@ -389,7 +534,7 @@ $("#lgbt").click(function() {
 
 $("#mothers").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -399,8 +544,19 @@ $("#mothers").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .decade, .dance, .lgbt, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #decade, #dance, #lgbt, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .decade, .dance, .lgbt, .color, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #decade, #dance, #lgbt, #color, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".mothers").toggle();
@@ -409,7 +565,7 @@ $("#mothers").click(function() {
 
 $("#color").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -419,8 +575,19 @@ $("#color").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .dance, .decade, .mothers, .lgbt, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #dance, #decade, #mothers, #lgbt, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .dance, .decade, .mothers, .lgbt, .diaries, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #dance, #decade, #mothers, #lgbt, #diaries, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".color").toggle();
@@ -429,7 +596,7 @@ $("#color").click(function() {
 
 $("#diaries").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -439,8 +606,19 @@ $("#diaries").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .dance, .decade, .mothers, .color, .lgbt, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #dance, #decade, #mothers, #color, #lgbt, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .dance, .decade, .mothers, .color, .lgbt, .factory, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #dance, #decade, #mothers, #color, #lgbt, #factory, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".diaries").toggle();
@@ -449,7 +627,7 @@ $("#diaries").click(function() {
 
 $("#factory").click(function() {
 	
-	// desativar os outros menus
+	// desativar videos
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -459,8 +637,19 @@ $("#factory").click(function() {
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	$(".2022, .night, .supercut, .decade, .dance, .mothers, .color, .diaries, .lgbt, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
-	$("#2022, #night, #supercut, #decade, #dance, #mothers, #color, #diaries, #lgbt, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	// desativar os outros menus
+	$(".commercial, .2022, .night, .supercut, .decade, .dance, .mothers, .color, .diaries, .lgbt, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .watching, .splash").attr('style', 'display:none');
+	$("#commercial, #2022, #night, #supercut, #decade, #dance, #mothers, #color, #diaries, #lgbt, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #watching, #splash").removeClass("medium");
 	
 	// ativar
   	$(".factory").toggle();
@@ -592,9 +781,18 @@ $("#watching").click(function() {
 
 
 
+
+
+
+
+   
+
 // CLOSE PROJECT + NAV WHEN YOU CLICK SOMEWHERE ELSE ON THE PAGE
 
+
+
 $(document).click(function() {
+	
 	$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[1].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[2].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -603,13 +801,25 @@ $(document).click(function() {
 	$('iframe')[5].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[6].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	$('iframe')[7].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[8].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[9].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[10].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	$('iframe')[11].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+	
+$("video").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+});
+	
+	
 	$(".nav-video, .nav-photography, .nav-editorial, .nav-identity, .nav-web").attr('style', 'display:none');
 	$("#video, #photography, #editorial, #identity, #web").removeClass("underline");
-	$(".2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching").attr('style', 'display:none');
-	$("#2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").removeClass("medium");
+	$(".commercial, .2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching").attr('style', 'display:none');
+	$("#commercial, #2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").removeClass("medium");
 });
 
-$(".circle, footer a, .nav, .2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching, #2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").click(function(e) {
+$(".circle, footer a, .nav, .commercial, .2022, .decade, .supercut, .dance, .lgbt, .mothers, .color, .diaries, .factory, .night, .naranja, .guide, .mixtape, .green, .costa, .peter, .batalha, .blob, .splash, .watching, #commercial, #2022, #decade, #supercut, #dance, #lgbt, #mothers, #color, #diaries, #factory, #night, #naranja, #guide, #mixtape, #green, #costa, #peter, #batalha, #blob, #splash, #watching").click(function(e) {
   e.stopPropagation();
 });
 
