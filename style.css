@@ -160,7 +160,8 @@ main {
     letter-spacing: normal;
     font-size: 5.5vw;
     line-height: 1.6;
-	margin-bottom: 3vh;
+	margin-bottom: 3vh;	
+    width: 92%;
 }
 
 .nav-video li:hover, .nav-photography li:hover, .nav-editorial li:hover, .nav-identity li:hover, .nav-web li:hover, .medium {
@@ -209,13 +210,17 @@ section p {
 section p:first-of-type {
 	padding-top: 0;
 }
+	
+	.efterklang p:first-of-type {
+		margin-bottom: -3vh;
+	}	
 
 .2022 p, .decade p, .supercut p, .dance p, .lgbt p, .mothers p, .color p, .diaries p, .factory p, .night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
 	padding-bottom: 30vh;
 }
 	
-.commercial p:first-of-type {
-		padding-top: 3vh;
+.commercial p:first-of-type, .efterklang iframe {
+	padding-top: 3vh;
 }	
 
 .wrap:first-of-type {
@@ -517,7 +522,7 @@ main {
 .nav-video, .nav-photography, .nav-editorial, .nav-identity, .nav-web {
 	display: none;
 	position: absolute;
-	width: 19vw;
+	width: 21vw;
     top: 0;
     margin-left: 16vw;
 	padding: 0;
@@ -596,8 +601,12 @@ p:first-of-type, .commercial p {
 }
 	
 .commercial p:first-of-type {
-		padding-top: 4vh;
+	padding-top: 4vh;
 }	
+	
+.efterklang p:first-of-type {
+	margin-bottom: -5vh;
+}
 
 .night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
 	margin-bottom: 37vh;
@@ -675,7 +684,8 @@ img:not(.star):not(.me):first-of-type {
 	margin-top: 5vh;
 }
 
-.guide img:last-of-type, .mixtape img:last-of-type, .green img:last-of-type, .costa img:last-of-type, .batalha img:last-of-type, .blob img:last-of-type {
+
+.efterklang img:last-of-type, .guide img:last-of-type, .mixtape img:last-of-type, .green img:last-of-type, .costa img:last-of-type, .batalha img:last-of-type, .blob img:last-of-type {
 	margin-bottom: 5vh;
 }
 
