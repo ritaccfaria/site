@@ -215,7 +215,7 @@ section p:first-of-type {
 		margin-bottom: -3vh;
 	}	
 
-.2022 p, .decade p, .supercut p, .dance p, .lgbt p, .mothers p, .color p, .diaries p, .factory p, .night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
+.2023 p, .2022 p, .decade p, .supercut p, .dance p, .lgbt p, .mothers p, .color p, .diaries p, .factory p, .night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
 	padding-bottom: 30vh;
 }
 	
@@ -608,7 +608,7 @@ p:first-of-type, .commercial p {
 	margin-bottom: -5vh;
 }
 
-.night p, .splash p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
+.night p, .splash p, .movieposters p, .watching p, .naranja p:last-of-type, .peter p:last-of-type {
 	margin-bottom: 37vh;
 }
 	
@@ -670,6 +670,10 @@ img:not(.star):not(.me):not(.vert) {
     z-index: 99;
 	width: 70%;
 }
+	
+	.movieposters img:nth-child(2) {
+		border: 0.5px solid rgba(0,0,0,0.82);
+	}
 
 section a {
 	color: #000;
