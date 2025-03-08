@@ -1,0 +1,415 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+	display: none;
+}
+video::-webkit-media-controls-toggle-closed-captions-button {
+	display: none;
+}
+
+video::-webkit-media-controls-picture-in-picture-button {
+	display: none;
+}
+
+
+
+
+
+
+
+
+body {
+	background-color: white;
+	
+}
+
+.circle {
+	position: absolute;
+	z-index: 98;
+	mix-blend-mode: difference;
+	pointer-events: none;
+	height: 20px;
+	width: 20px;
+	transition: transform 0.3s;
+}
+
+.circle-hover {
+	transform: scale(3);
+	transition: transform 0.3s;
+}
+
+.magic {
+  z-index: 99;
+  pointer-events: none;	
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  background: url('images/me.jpg') no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;	
+}
+
+.me {
+	display: block;
+	transform: scale(220);
+	transition: transform 0.3s;
+}
+
+.circle2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255,255,255,0);
+  border-radius: 50%;
+  display: flex;
+  z-index: 1;
+}
+
+.star {
+    width: 75%;
+    height: 75%;
+	margin: auto;
+}
+	
+#draggable1 {
+	margin-left: 53vw;
+	margin-top:  34vh;
+}
+
+#draggable2 {
+	margin-left: 64vw;
+	margin-top:  17vh;
+}
+
+#draggable3 {
+	margin-left: 73vw;
+	margin-top:  28vh;
+}
+
+#draggable4 {
+	margin-left: 88vw;
+	margin-top:  12vh;
+}
+
+nav a {
+	position: fixed;
+	top: 2%;
+    right: 1.5%;
+	z-index: 1;
+	color: white;
+	mix-blend-mode: difference;
+	font-family: "Archivo", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1.8vw;
+	padding-left: 1.5vw;
+}
+
+nav a:nth-of-type(1) {
+	right: 25%;
+}
+
+nav a:nth-of-type(2) {
+	right: 15%;
+}
+
+nav a:nth-of-type(3) {
+	right: 6%;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+header {
+	position: absolute;
+    left: 1.5%;
+	font-family: "Archivo", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 2.6vw;
+	padding-top: 12%;
+}
+
+header p {
+	cursor: default;
+}
+
+.message {
+	display: none;
+}
+
+.stars {
+	position: absolute;
+    width: 36vw;
+    left: 56vw;
+    top: 10%;
+    rotate: 12deg;
+}
+
+section {
+	padding-top: 28%;
+}
+
+.row {
+  display: flex;
+  padding: 0% 1% 0.5%;
+  column-gap: 0.5%;
+}
+
+
+.column {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+	
+}
+
+.column h2 {
+	font-family: "Archivo", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	padding-left: 2%;
+	padding-top: 2%;
+}
+
+.column video {
+	top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.column iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.column .caption {
+  z-index: 1;
+  position: relative;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.column .tag {
+  z-index: 1;
+  color: white;	
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 3vh;
+  display: inline-block;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(50px);
+  border-radius: .25rem;
+  font-size: 0.9vw;	
+  padding: 0 1%;
+}
+
+.tag-container {
+	position: absolute;
+	bottom: 2vh;
+    left: 1vw;
+	display: flex;
+	column-gap: 1%;
+    width: 100%;
+}
+
+.tag a {
+	text-decoration: none;
+	color: white;
+}
+
+.tag a:hover {
+	text-decoration: underline;
+}
+
+.laurels {
+	right: 1vw;
+    bottom: 1vh;
+    z-index: 9;
+    position: absolute;
+    width: 10vw;
+}
+
+.laurels img {
+	width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  overflow: scroll;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  background-color: white; 
+  z-index: 99; 
+}
+
+.overlay-clicked {
+	transform: translateY(0%);
+	transition: transform 0.3s ease;
+}
+
+.row-overlay {
+  display: flex;
+  padding: 4% 10% 0.5%;
+  column-gap: 0.5%;
+}
+
+.column-overlay {
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    position: relative;
+	
+}
+
+.column-overlay video {
+	top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.overlay p {
+	position: fixed;
+	z-index: 2;
+	width: max-content;
+	color: white;
+	mix-blend-mode: difference;
+	font-family: "Archivo", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1.8vw;
+	padding-left: 1.5vw;
+	padding-top: 2vh;
+}
+
+.overlay p:hover  {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+footer {
+	cursor: default;
+	font-family: "Archivo", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+	font-size: 0.9vw;
+	position: absolute;
+	right: 1.5%;
+	padding: 2vh 0;
+}
+
+
+.plyr {
+	--plyr-color-main: #FF7518;
+	font-family: "Archivo", Arial, Helvetica, sans-serif !important;
+	height: 100vh;
+	pointer-events: all !important;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	
+	body {
+		overflow: hidden;
+	}
+	
+		.circle, .magic {
+			display: none;
+		}
+	
+		.stars {
+			display: none;
+		}
+	
+		header {
+			left: 24%;
+			padding-top: 40%;
+		}
+	
+		header p:first-of-type {
+			display: none;
+		}
+	
+		.message {
+			text-align: center;
+			font-size: 4.6vw;
+		    padding-top: 30%;
+			display: block;
+		}
+	
+		nav {
+			display: none;
+		}
+	
+	    section {
+			display: none;
+		}
+	
+		footer {
+			display: none;
+		}
+
+		.overlay {
+			display: none;
+		}
+
+	    #draggable1, #draggable2, #draggable3, #draggable4, .leader-line {
+			display: none;
+		}
+		
+}
+
